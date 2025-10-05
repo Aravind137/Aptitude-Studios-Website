@@ -46,14 +46,13 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    // pathMatch: 'full',
-    // redirectTo: 'home'
+    pathMatch: 'full',
   },
   {
     path: 'home',
     pathMatch: 'full',
     redirectTo: ''
-    // component: HomeComponent,
+     //component: HomeComponent,
   },
   // {
   //   path: 'casino/:id',
