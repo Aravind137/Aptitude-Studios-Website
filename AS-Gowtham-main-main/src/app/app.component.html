@@ -1,0 +1,443 @@
+<div class="uk-visible@l" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+  <div class="txt-white uk-text-right custom-background">
+    <div class="uk-margin-xlarge-right">
+      <span><img class="" src="/assets/images/home/mail.png" width="25" height="25" alt="email_anime" /></span>
+      <a href="mailto:info@aptitudestudios.in"> info@aptitudestudios.in</a>
+      <span><img class="uk-margin-small-left" src="/assets/images/home/phone-call.png" width="25" height="25"
+          alt="phone_anime" /></span>
+      +91 98400 12393 <!-- v0.1 -->
+    </div>
+  </div>
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left uk-margin-large-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active uk-margin-large-right uk-padding-small">
+          <a routerLink="/">
+            <img src="/assets/images/logo.png" height="50px" width="140px" alt="company_logo" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="uk-navbar-right uk-margin-large-right">
+      <ul class="uk-nav uk-navbar-nav" #menu>
+        <li>
+          <a routerLink="/" class="uk-text-capitalize uk-text-largex uk-text-uppercase">Home</a>
+        </li>
+        <li>
+          <a routerLink="/about-us" routerLinkActive="active" class="uk-text-uppercase">About Us</a>
+        </li>
+        <li>
+          <a routerLink="/service" routerLinkActive="active" class="uk-text-uppercase">Services</a>
+          <div class="uk-navbar-dropdown uk-navbar-dropdown-width-4 custom-drowdown-navbar">
+            <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+              <div>
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-nav-header uk-text-bold">
+                    <!-- routerLink="/games/herosection" -->
+                    <p>Game Development</p>
+                  </li>
+                  <li><a href="/unity-games">Unity Games</a></li>
+                  <li><a href="/ar-vr-games">AR & VR Games</a></li>
+                  <li><a href="/unreal-game-engine">Unreal Game Engine</a></li>
+                  <!-- <li>
+                    <a href="/play2earn-blockchain">Play2Earn (Blockchain)</a>
+                  </li> -->
+                  <li>
+                    <a href="/metaverse-blockchain">Metaverse (Blockchain)</a>
+                  </li>
+                  <li>
+                    <a href="/multiplayer-games">Multiplayer Games</a>
+                  </li>
+                  <li class="uk-nav-divider"></li>
+                  <li class="uk-nav-header uk-text-bold">
+                    <!-- routerLink="/mobileapp-webdev/herosection" -->
+                    <p>Mobile App & Web development</p>
+                  </li>
+                  <li>
+                    <a href="/mobile-app-development">Mobile App Development</a>
+                  </li>
+                  <li>
+                    <a href="/web-dev">Web Development </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div>
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-nav-header uk-text-bold">
+                    <p>ESPORTS APPLICATION DEVELOPMENT</p>
+                  </li>
+                  <li>
+                    <a href="/esports-tournament-platforms">Esports Tournament Platforms</a>
+                  </li>
+                  <li>
+                    <a href="/team-player-management">Team & Player Management Systems</a>
+                  </li>
+                  <li>
+                    <a href="/matchmaking-leaderboards">Matchmaking & Leader boards</a>
+                  </li>
+                  <li>
+                    <a href="/live-streaming-api">Live Streaming & API Integrations</a>
+                  </li>
+                  <li>
+                    <a href="/esports-mobile-app">Esports Mobile App Development</a>
+                  </li>
+                  <li>
+                    <a href="/analytics-performance">Analytics & Performance Insights</a>
+                  </li>
+                  <li class="uk-nav-divider"></li>
+              </div> -->
+              
+              <!-- NEW ESPORTS SERVICE POPUP -->
+              <div>
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-nav-header uk-text-bold">
+                    <p>ESPORTS APPLICATION DEVELOPMENT</p>
+                  </li>
+                  <li>
+                    <a href="/esports-tournament-platforms">Esports Tournament Platforms</a>
+                  </li>
+                  <li>
+                    <a href="/team-player-management">Team & Player Management Systems</a>
+                  </li>
+                  <li>
+                    <a href="/matchmaking-leaderboards">Matchmaking & Leader boards</a>
+                  </li>
+                  <li>
+                    <a href="/live-streaming-api">Live Streaming & API Integrations</a>
+                  </li>
+                  <li>
+                    <a href="/esports-mobile-app">Esports Mobile App Development</a>
+                  </li>
+                  <li>
+                    <a href="/analytics-performance">Analytics & Performance Insights</a>
+                  </li>
+                  <li class="uk-nav-divider"></li>
+                  <li class="uk-nav-header uk-text-bold">
+                    <!-- routerLink="/metaverse-metahumans/herosection" -->
+                    <p>
+                      Metaverse & Metahumans</p>
+                  </li>
+                  <li>
+                    <a href="/metaverse-gaming">Metaverse Gaming</a>
+                  </li>
+                  <li>
+                    <a href="/metaverse-world-creation">Metaverse World Creation</a>
+                  </li>
+                  <li>
+                    <a href="/metahuman-developments">Metahuman Developments</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-nav-header uk-text-bold">
+                    <!-- [routerLink]="['/nft/herosection']" -->
+                    <p> Blockchain Development</p>
+                  </li>
+                  <li><a href="/nft">NFT (Non- Fungible Token)</a></li>
+                  <li><a href="/nft-blockchain">Blockchain</a></li>
+                  <li><a href="/product-developments">Product Developments</a></li>
+                  <li><a href="/languages">Languages</a></li>
+                  <li>
+                    <a href="/exchanges-wallet-develop">Exchanges and Wallet Developments</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/career" routerLinkActive="active" class="uk-text-uppercase">Career</a>
+        </li>
+        <li>
+          <p routerLink="/contact-us" style="text-decoration: none;">
+            <button
+              class="uk-button uk-button-primary uk-align-left uk-margin-auto-vertical uk-border-rounded uk-text-uppercase">
+              Contact Us
+            </button>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<nav class="uk-navbar uk-navbar-container uk-margin-remove uk-padding-remove uk-hidden@l">
+  <div class="uk-navbar-left uk-margin-left">
+    <a routerLink="/">
+      <img src="/assets/images/logo.png" height="40px" width="120px" alt="company_logo" />
+    </a>
+  </div>
+  <div class="uk-navbar-right">
+    <a class="uk-navbar-toggle uk-padding" uk-toggle="target: #offcanvas-overlay">
+      <!-- <span class="uk-margin-small-left">Menu</span> -->
+      <span uk-navbar-toggle-icon></span>
+    </a>
+  </div>
+</nav>
+
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
+  <div class="uk-offcanvas-bar">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <ul class="uk-list uk-margin-large-top uk-margin-left">
+      <li>
+        <a routerLink="/" routerLinkActive="active-link" class="uk-text-largex">Home</a>
+      </li>
+      <li>
+        <a routerLink="/about-us" routerLinkActive="active-link" class="">About Us</a>
+      </li>
+      <li>
+        <a routerLink="/service" routerLinkActive="active-link" class="">Services</a>
+        <ul class="uk-margin-left" uk-accordion>
+          <li class="">
+            <a class="uk-accordion-title uk-text-small">Game Development</a>
+            <div class="uk-accordion-content">
+          <li>
+            <a class="uk-text-small" href="/unity-games">Unity Games</a>
+          </li>
+          <li>
+            <a class="uk-text-small" href="/ar-vr-games">AR & VR Games</a>
+          </li>
+          <li>
+            <a class="uk-text-small" href="/unreal-game-engine">Unreal Game Engine</a>
+          </li>
+          <!-- <li>
+            <a class="uk-text-small" href="play2earn-blockchain">Play2Earn (Blockchain)</a>
+          </li> -->
+          <li>
+            <a class="uk-text-small" href="/metaverse-blockchain">Metaverse (Blockchain)</a>
+          </li>
+          <li>
+            <a class="uk-text-small" href="/multiplayer-games">Multiplayer Games</a>
+          </li>
+  </div>
+  </li>
+  <li class="">
+
+    <a class="uk-accordion-title uk-text-small">Mobile App & Web development</a>
+    <div class="uk-accordion-content">
+  <li>
+    <a class="uk-text-small" href="/mobile-app-development">Mobile App Development</a>
+  </li>
+  <li>
+    <a class="uk-text-small" href="/web-dev">Web Development
+    </a>
+  </li>
+</div>
+</li>
+<!-- <li class="">
+  <a class="uk-accordion-title uk-text-small">ESPORTS APPLICATION DEVELOPMENT</a>
+  <div class="uk-accordion-content">
+<li>
+  <a class="uk-text-small" href="/esports-tournament-platforms">Esports Tournament Platforms</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/team-player-management">Team & Player Management Systems</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/matchmaking-leaderboards">Matchmaking & Leader boards</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/live-streaming-api">Live Streaming & API Integrations</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/esports-mobile-app">Esports Mobile App Development</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/analytics-performance">Analytics & Performance Insights</a>
+</li>
+</div>
+</li> -->
+
+<!-- NEW ESPORTS SERVICE POPUP MOBILE -->
+<li class="">
+  <a class="uk-accordion-title uk-text-small">ESPORTS APPLICATION DEVELOPMENT</a>
+  <div class="uk-accordion-content">
+<li>
+  <a class="uk-text-small" href="/esports-tournament-platforms">Esports Tournament Platforms</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/team-player-management">Team & Player Management Systems</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/matchmaking-leaderboards">Matchmaking & Leader boards</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/live-streaming-api">Live Streaming & API Integrations</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/esports-mobile-app">Esports Mobile App Development</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/analytics-performance">Analytics & Performance Insights</a>
+</li>
+</div>
+</li>
+<li class="">
+  <a class="uk-accordion-title uk-text-small">Metaverse & Metahumans</a>
+  <div class="uk-accordion-content">
+<li>
+  <a class="uk-text-small" href="/metaverse-gaming">Metaverse Gaming</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/metaverse-world-creation">Metaverse World Creation</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/metahuman-developments">Metahuman Developments</a>
+</li>
+</div>
+</li>
+<li class="">
+  <a class="uk-accordion-title uk-text-small">Blockchain Development</a>
+  <div class="uk-accordion-content">
+<li>
+  <a class="uk-text-small" href="/nft">NFT (Non- Fungible Token)</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/nft-blockchain">Blockchain</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/product-developments">Product Developments</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/languages">Languages</a>
+</li>
+<li>
+  <a class="uk-text-small" href="/exchanges-wallet-develop">Exchanges and Wallet Developments</a>
+</li>
+</div>
+</li>
+</ul>
+</li>
+<li>
+  <a routerLink="/career" routerLinkActive="active-link" class="">Careers</a>
+</li>
+<li>
+  <a routerLink="/contact-us" routerLinkActive="active-link" class="">Contact Us</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Page dynamic content start -->
+<router-outlet></router-outlet>
+<!-- Page dynamic content end -->
+<div class="Footer uk-visible@l">
+  <div class="uk-section uk-padding-small footer-bg">
+    <div class="uk-container">
+      <div class="" uk-grid>
+        <div class="uk-width-auto@s uk-margin-medium-top">
+          <img src="/assets/images/logo.png" height="60px" width="160px" alt="logo_img" />
+          <div class="">
+            <a href="https://www.google.com/search?q=aptitude+studios&oq=aptitude+studios&aqs=edge.0.0i13i512j69i60l3j69i64.4563j0j9&sourceid=chrome&ie=UTF-8#lrd=0x3a5265e7a054db87:0xc1512fb0294a20ce,1,,,"
+              target="_blank" rel="noopener">
+              <img src="/assets/images/home/Star.png" width="85" height="30" alt="Star" />
+              4.4/5
+            </a>
+          </div>
+        </div>
+        <div class="uk-width-expand@s uk-text-center">
+          <div class="uk-flex uk-flex-center" uk-grid>
+            <div>
+              <a routerLink="/" routerLinkActive="active-link" class="custom-hover">Home</a>
+            </div>
+            <div>
+              <a routerLink="/about-us" routerLinkActive="active-link" class="custom-hover">About Us</a>
+            </div>
+            <div>
+              <a routerLink="/service" routerLinkActive="active-link" class="custom-hover">Services</a>
+            </div>
+            <!-- <div>
+              <a routerLink="/games" routerLinkActive="active-link" class="custom-hover">Games</a>
+            </div> -->
+            <div>
+              <a routerLink="/career" routerLinkActive="active-link" class="custom-hover">Career</a>
+            </div>
+            <div>
+              <a routerLink="/contact-us" routerLinkActive="active-link" class="custom-hover">Contact Us</a>
+            </div>
+          </div>
+          <div class="uk-text-center uk-margin-large-top">
+            <a routerLink="/privacy-policy" routerLinkActive="active-link" class="uk-text-capitalize txt-light">Privacy
+              Policy</a> | <a routerLink="/terms-and-conditions" routerLinkActive="active-link"
+              class="uk-text-capitalize txt-light">Terms and Condtions</a>
+            <p class="txt-light uk-margin-remove">
+              Copyright © 2025 APTITUDE STUDIOS. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+        <div class="uk-width-auto@s uk-margin-large-top">
+          <a href="https://www.youtube.com/@AptitudeStudios" target="_blank" rel="noopener">
+            <img src="/assets/images/socia-media/YouTube_01.png" width="35" height="35" alt="YouTube_icon"
+              class="custom-hover-img" />
+          </a>
+          <a href="https://twitter.com/aptitudestudios" target="_blank" rel="noopener">
+            <img class="uk-margin-small-left custom-hover-img" src="/assets/images/socia-media/Twitter_01.png"
+              width="35" height="35" alt="Twitter_icon" />
+          </a>
+          <a href="https://www.facebook.com/aptitudegroup" target="_blank" rel="noopener" class=" ">
+            <img class="uk-margin-small-left custom-hover-img" src="/assets/images/socia-media/Facebook_01.png"
+              width="35" height="35" alt="facebook_icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile-screen footer-bg uk-hidden@l">
+  <div class="uk-padding-small">
+    <img src="/assets/images/logo.png" height="60px" width="160px" alt="logo_img" />
+    <div class="">
+      <a href="https://www.google.com/search?q=aptitude+studios&oq=aptitude+studios&aqs=edge.0.0i13i512j69i60l3j69i64.4563j0j9&sourceid=chrome&ie=UTF-8#lrd=0x3a5265e7a054db87:0xc1512fb0294a20ce,1,,,"
+        target="_blank" rel="noopener">
+        <img src="/assets/images/home/Star.png" width="85" height="30" alt="Star" />
+        4.4/5
+      </a>
+    </div>
+  </div>
+  <div class="uk-padding-small">
+    <h3 class="uk-text-bold txt-white">Quick Links</h3>
+    <hr class="uk-divider-small" />
+    <ul class="uk-list">
+      <li>
+        <a routerLink="/" routerLinkActive="active-link" class="">Home</a>
+      </li>
+      <li>
+        <a routerLink="/about-us" routerLinkActive="active-link" class="">About Us</a>
+      </li>
+      <li>
+        <a routerLink="/service" routerLinkActive="active-link" class="">Services</a>
+      </li>
+      <li>
+        <a routerLink="/games" routerLinkActive="active-link" class="">Games</a>
+      </li>
+      <li>
+        <a routerLink="/career" routerLinkActive="active-link" class="">Career</a>
+      </li>
+      <li>
+        <a routerLink="/contact-us" routerLinkActive="active-link" class="">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  <div class="uk-padding-small">
+    <h3 class="uk-text-bold txt-white">Social Media</h3>
+    <hr class="uk-divider-small" />
+    <a href="https://www.youtube.com/@AptitudeStudios" target="_blank" rel="noopener">
+      <img src="/assets/images/socia-media/YouTube_01.png" width="45" height="45" alt="YouTube_icon" />
+    </a>
+    <a href="https://twitter.com/aptitudestudios" target="_blank" rel="noopener">
+      <img class="uk-margin-small-left" src="/assets/images/socia-media/Twitter_01.png" width="45" height="45"
+        alt="Twitter_icon" />
+    </a>
+    <a href="https://www.facebook.com/aptitudegroup" target="_blank" rel="noopener">
+      <img class="uk-margin-small-left" src="/assets/images/socia-media/Facebook_01.png" width="45" height="45"
+        alt="facebook_icon" />
+    </a>
+  </div>
+  <div class="uk-text-center">
+    <a routerLink="/privacy-policy" routerLinkActive="active-link" class="uk-text-capitalize txt-light">Privacy
+      Policy</a> | <a routerLink="/terms-and-conditions" routerLinkActive="active-link"
+      class="uk-text-capitalize txt-light">Terms and Condtions</a>
+    <p class="txt-light uk-margin-remove">
+      Copyright © 2025 APTITUDE STUDIOS. All Rights Reserved.
+    </p>
+  </div>
+</div>

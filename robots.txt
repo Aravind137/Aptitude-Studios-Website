@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /casino-details
+Disallow: /privacy-policy-playstore
+Disallow: /terms-and-conditions
+Allow: /
+
+Sitemap: https://www.aptitudestudios.in/sitemap.xml

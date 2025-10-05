@@ -1,0 +1,30 @@
+<div class="uk-section" uk-height-viewport>
+  <div class="uk-container">
+    <div class="uk-card uk-card-default uk-card-body uk-padding-large custom-card-design">
+      <div class="uk-child-width-1-2@m" uk-grid uk-scrollspy="cls: uk-animation-slide-left-small; target: h1, h3, li, button; delay: 200; ">
+        <div class="">
+          <div>
+            <h1 class="txt-primary">{{this.card.heading}}</h1>
+            <p class="uk-margin-small-top">{{this.card.paragraph}}</p>
+          </div>
+          <div class="uk-margin-medium-top">
+            <h3 class="">{{this.card.subHeading}}</h3>
+            <ul class="uk-list uk-list-disc">
+              <li class="" *ngFor="let list of this.card.list">{{list}}</li>
+            </ul>
+          </div>
+          <div class="uk-margin-medium-top">
+            <a routerLink="/contact-us">
+              <button class="uk-button uk-button-primary uk-text-uppercase cursor-pointer">
+                Send Request
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="" uk-scrollspy="cls: animate__animated animate__rollIn; target: img; delay: 100; ">
+          <img class="uk-height-1-1" [src]="this.card.image" style="width: 100%; height: auto; border-radius: 12px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

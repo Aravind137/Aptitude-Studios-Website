@@ -1,0 +1,33 @@
+<?php
+/* Handle CORS */
+
+// Specify domains from which requests are allowed
+header('Access-Control-Allow-Origin: *');
+
+// Specify which request methods are allowed
+header('Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS');
+
+// Additional headers which may be sent along with the CORS request
+header('Access-Control-Allow-Headers: X-Requested-With,Authorization,Content-Type');
+
+// Set the age to 1 day to improve speed/caching.
+header('Access-Control-Max-Age: 86400');
+
+// Exit early so the page isn't fully loaded for options requests
+if (strtolower($_SERVER['REQUEST_METHOD']) == 'options') {
+    exit();
+}
+
+$json = file_get_contents('php://input');
+$params = json_decode($json);
+$email = $params->email;
+$name = $params->fullName;
+$mobile = $params->mobile;
+
+$to =  'aptitudestudios@gmail.com';
+$subject = 'User Contacted from Website form';
+$message = "fullName: {$name} \nmobile: {$mobile} \nemail: {$email} \nmessage: {$params->message}";
+
+mail($to, $subject, $message);
+
+?>

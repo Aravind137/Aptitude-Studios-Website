@@ -1,0 +1,215 @@
+.footer-bg {
+  background-color: #57394d;
+}
+
+.txt-white {
+  color: white;
+}
+
+h3 {
+  font-size: 17px;
+}
+.bg-primary {
+  background: linear-gradient(
+    111.68deg,
+    #23041f 21.4%,
+    #360a23 122.16%
+  ) !important;
+}
+.text-primary {
+  color: #fe7724;
+}
+h2 {
+  font-size: 30px;
+}
+.uk-button-primary {
+  background-color: #fe7724 !important;
+  color: white;
+  border-radius: 7px;
+  font-weight: 500;
+}
+.uk-button-default {
+  border-radius: 7px;
+  color: white;
+  border: 1px solid #fe7724;
+}
+.primary-line {
+  width: 40%;
+  border: 1px solid #fe7724;
+}
+//testimonial
+.testimonial-card {
+  background-color: #3b2661;
+  border-radius: 50px;
+}
+p {
+  font-size: 14.5px;
+}
+.text-small {
+  font-size: 14px;
+}
+.text-primary {
+  color: #fe7724;
+}
+.uk-position-small {
+  margin-right: -19px;
+  margin-left: -19px;
+}
+
+.custom-collect-sell-paragraph {
+  font-size: 30px;
+}
+.custom-creative-digital-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.53);
+  border-radius: 55px;
+  padding: 30px 15px;
+  color: black;
+}
+.custom-divider {
+  border-bottom: 4px solid #000000;
+  width: 50%;
+  margin: auto;
+}
+.custom-font-color {
+  color: #405cc0 !important;
+}
+.slider-cs .slider-track-cs {
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite inherit;
+  display: flex;
+  width: calc(200px * 14);
+}
+.uk-divider-vertical {
+  border-left: 3px solid #4a2872;
+}
+.uk-grid-divider.uk-grid-stack > .uk-grid-margin::before {
+  border-top: 1px solid #4a2872 !important;
+}
+.uk-grid-divider > :not(.uk-first-column)::before {
+  border-left: 2px solid #4a2872;
+}
+.uk-tab > .uk-active > a {
+  border-color: #fe7724;
+  border-bottom: 2px solid #fe7724;
+  color: #fe7724 !important;
+}
+
+.custom-badge {
+  color: white !important;
+}
+
+.uk-tab::before {
+  border-bottom: 2px solid #591a9e;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+  background: rgba(34, 34, 34, 0.8);
+  cursor: pointer;
+}
+
+figure.effect-bubba img {
+  opacity: 0.4;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+figure.effect-bubba h2 {
+  padding-top: 30%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+
+figure.effect-bubba p {
+  padding: 20px 2.5em;
+  // opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.custom-section-bg-overlay {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.custom-quote-section-bg {
+  background-image: url('../../assets/images/home/home-bg-quote2.jpg');
+  background-repeat: 'no-repeat';
+}
+
+.custom-icon-bg {
+  background-color: #fe7724
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+ }
+ .custom-bg-overlay {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+// Mobile Development specific styling
+.uk-margin-remove-top.txt-white {
+  width: 281.53px;
+  height: 105.25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #F7F7F7;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  line-height: 1.2;
+  overflow: hidden;
+}

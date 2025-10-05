@@ -1,0 +1,100 @@
+<div class="" uk-height-viewport="expand: true">
+  <div class="uk-section">
+    <div class="uk-container uk-container-xsmall"
+      uk-scrollspy="cls: uk-animation-fade; target: input, textarea, button; delay: 200">
+      <div class="uk-text-center">
+        <h1 class="uk-text-bold txt-white">Let's Talk About Your Project!</h1>
+        <p class="txt-white">Drop us a line through the form below</p>
+      </div>
+      <form [formGroup]="contactUsForm" (ngSubmit)="sendMessage()">
+        <div class="custom-error-bg uk-text-center uk-text-white uk-margin-small-top" *ngIf="error">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            style="vertical-align: middle; margin-right: 8px;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <span class="txt-white">{{ error }}</span>
+        </div>
+
+        <div class=" uk-margin-medium-top">
+          <div class="">
+            <label class="txt-white" for="your-name">Your Name(required)</label>
+            <input class="uk-input uk-border-rounded uk-margin-small-top" type="text" placeholder="Full Name"
+              aria-label="Input" name="fullName" formControlName="fullName" required />
+          </div>
+          <div class="uk-margin-top uk-child-width-1-2@s" uk-grid>
+            <div class="">
+              <label class="txt-white" for="your-name">Email(required)</label>
+              <input class="uk-input uk-border-rounded uk-margin-small-top" type="email" placeholder="test@gmail.com"
+                aria-label="Input" name="email" formControlName="email" />
+            </div>
+            <div class="">
+              <label class="txt-white" for="your-name">Mobile(required)</label>
+              <input class="uk-input uk-border-rounded uk-margin-small-top" type="number"
+                placeholder="10 - digit number" aria-label="Input" name="mobile" formControlName="mobile" />
+            </div>
+          </div>
+          <div class="uk-margin-top">
+            <label class="txt-white" for="your-name">Message</label>
+            <textarea class="uk-textarea uk-border-rounded uk-margin-small-top" rows="5" name="textArea"
+              formControlName="message"></textarea>
+          </div>
+        </div>
+        <div class="uk-margin-medium-top">
+          <button type="submit" class="uk-button uk-text-uppercase uk-button-primary uk-text-bold txt-white uk-width-1-1 uk-button-large
+            uk-border-rounded">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="custom-bg-overlay">
+    <div class="uk-section">
+      <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-bottom; target: h4, h2; delay: 200">
+        <div class="" uk-grid>
+          <div class="uk-width-expand@s">
+            <h4 class="txt-white uk-text-bold uk-margin-remove-bottom">
+              Reach Us: +91 98400 12393
+            </h4>
+            <h2 class="txt-white uk-text-bold uk-margin-small-top">
+              <a href="mailto:info@aptitudestudios.in" class="txt-white">
+                info@aptitudestudios.in
+              </a>
+            </h2>
+          </div>
+          <div class="uk-width-auto@s">
+            <h2 class="uk-text-bold uk-text-center txt-primary uk-margin-small-bottom">
+              500+
+            </h2>
+            <h4 class="uk-margin-remove-top uk-text-bold txt-white">
+              Projects Managed
+            </h4>
+          </div>
+          <div class="uk-width-auto@s">
+            <h2 class="uk-text-bold uk-text-center txt-primary uk-margin-small-bottom">
+              100+
+            </h2>
+            <h4 class="uk-margin-remove-top uk-text-bold txt-white">
+              Skilled Team Members
+            </h4>
+          </div>
+          <div class="uk-width-auto@s">
+            <h2 class="uk-text-bold uk-text-center txt-primary uk-margin-small-bottom">
+              12+
+            </h2>
+            <h4 class="uk-margin-remove-top uk-text-bold txt-white">
+              Industry Experience
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Map section start -->
+<app-google-map></app-google-map>
+<!-- Map section end -->

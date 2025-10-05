@@ -1,0 +1,46 @@
+.notfound-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at top, #2b1055, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .notfound-content {
+    max-width: 600px;
+  
+    h1 {
+      font-size: 6rem;
+      margin: 0;
+      color: #fbd776; // yellow-orange
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+  
+    button {
+      background: #f85f24;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        background: #d94e1d;
+      }
+    }
+  }
+  

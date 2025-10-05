@@ -1,0 +1,37 @@
+.custom-section-bg {
+  background: linear-gradient(
+    111.68deg,
+    #23041f 21.4%,
+    #360a23 122.16%
+  ) !important /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.heading-font {
+  font-family: 'Inter';  
+  color: white;
+}
+.custom-font {
+  font-family: "Odibee Sans", cursive;
+}
+.uk-text-primary {
+  color: #f37d37 !important;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+.card {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.custom-bg-overlay {
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 24px !important;
+}
