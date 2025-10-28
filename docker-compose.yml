@@ -1,0 +1,9 @@
+services:
+  aptitudestudios-website:
+    build: .
+    ports:
+      - "8081:8081"
+    container_name: aptitudestudios-website
+    mem_limit: 512m
+    environment:
+      - PORT=8081		
