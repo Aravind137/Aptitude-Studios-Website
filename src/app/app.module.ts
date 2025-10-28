@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Inject, PLATFORM_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CasinogamesComponent } from './casinogames/casinogames.component';
@@ -21,10 +20,14 @@ import { CareerComponent } from './career/career.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
+import { isPlatformBrowser, LocationStrategy, PathLocationStrategy } from '@angular/common'; // ✅ Only once
+
+
+// Firebase imports
 import { environment } from 'src/environments/environment';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { Analytics, getAnalytics, provideAnalytics } from '@angular/fire/analytics';
+import { provideAnalytics, getAnalytics } from '@angular/fire/analytics';
+
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { HomeComponent } from './home/home.component';
 import { PrivacyPolicyPlaystoreComponent } from './privacy-policy-playstore/privacy-policy-playstore.component';
@@ -95,19 +98,38 @@ import { ExchangesWalletDevelopComponent } from './exchanges-wallet-develop/exch
     NftBlockchainComponent,
     ProductDevelopmentsComponent,
     LanguagesComponent,
-    ExchangesWalletDevelopComponent
+    ExchangesWalletDevelopComponent,
   ],
   imports: [
-    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     RouterModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAnalytics(() => getAnalytics()),
+     // ✅ Initialize Analytics safely
+    provideAnalytics(() => {
+      if (typeof window !== 'undefined') {
+        try {
+          return getAnalytics();
+        } catch (e) {
+          console.warn('Analytics not initialized:', e);
+          return null as any;
+        }
+      }
+      return null as any;
+    }),
   ],
   providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+	constructor(@Inject(PLATFORM_ID) platformId: Object) {
+    if (isPlatformBrowser(platformId)) {
+      console.log('✅ Running in browser — Firebase ready');
+    } else {
+      console.log('⚙️ Running on server — skipping Analytics');
+    }
+  }
+}
